@@ -29,6 +29,9 @@ This project is provided by the same developer behind the [Decred Observer](http
 
 If you find this tool useful, please consider donating as a thank you. Any crypto donations are welcome and greatly appreciated:
 
+**Decred:**
+```DsiRCP7pvKF5RgEuUgT77cHVtBdwRwSWNxV```
+
 **Bitcoin:**
 ```1DvKL6bsvFbPLHzpfyi1gN14UTLeTMteP1```
 
@@ -44,5 +47,3 @@ If you find this tool useful, please consider donating as a thank you. Any crypt
 **Monero:**
 ```41zJ821YXfp952H7XAFNpZimo1gsF8V8mhd8ioSYf6tvesq5Tjm2rW5F1qM4uCFFgATQztxXowd5Q9pR3hpQvgcz5Z4QMha```
 
-**Decred:**
-```DsiRCP7pvKF5RgEuUgT77cHVtBdwRwSWNxV```
