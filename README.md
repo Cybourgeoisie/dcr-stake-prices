@@ -1,12 +1,12 @@
 # Decred Staking Price Association
 
-This Python tool accepts the .csv created by the most recent Decred wallet to calculate all profits from staking, and creates a copy of the .csv with the prices on the day that the tickets were staked, including the profit generated.
+This Python tool accepts the .csv created by the Decredition wallet to calculate all profits from staking, and creates a copy of the .csv with the prices on the day that the tickets were staked, including the profit generated.
 
 
 ## Usage
 
 ```
-python dcrTaxes.py [path_to_original_filename.csv] [path_to_new_filename.csv]
+python dcr-stake-prices.py [path_to_original_filename.csv] [path_to_new_filename.csv]
 ```
 
 
@@ -18,6 +18,11 @@ The Decred price data is provided by [CoinMetrics.io](https://coinmetrics.io).
 ## Reporting Requests, Bugs & Issues
 
 Feel free to add issues to the repository as necessary. If you want to get my attention quicker, you can ping me directly on Twitter: [@cybourgeoisie](https://twitter.com/cybourgeoisie).
+
+
+## Decred Observer
+
+This project is provided by the same developer behind the [Decred Observer](https://dcr.observer), a Decred wallet explorer.
 
 
 ## Donations
