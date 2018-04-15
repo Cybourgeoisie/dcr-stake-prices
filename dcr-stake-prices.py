@@ -37,6 +37,8 @@ with open(new_voting_filename, 'w') as newcsvfile:
 
 		# Ignore the header, pull into new csv file
 		header = next(csvreader, None)
+		header.append("Reward")
+		header.append("Price of DCR")
 		header.append("Total DCR Staked")
 		header.append("Unix Epoch Time")
 		csvwriter.writerow(header)
@@ -49,13 +51,15 @@ with open(new_voting_filename, 'w') as newcsvfile:
 			# Get date
 			date = dateutil.parser.parse(row[1])
 
-			# Pull the year, month and day
+			# Pull the year, month and day & unix time
 			date_formatted = date.strftime("%Y-%m-%d")
-			row[-1] = prices[date_formatted]
-			row.append(float(prices[date_formatted]) * float(row[-2]))
-
 			epoch = datetime.datetime(1970,1,1).replace(tzinfo=pytz.UTC)
 			t = (date - epoch).total_seconds()
+
+			# Add the reward, price per DCR, and price * reward
+			row.append(float(row[-1]) - float(row[-2]))
+			row.append(prices[date_formatted])
+			row.append(float(prices[date_formatted]) * float(row[-2]))			
 			row.append(t)
 
 			# Add next row

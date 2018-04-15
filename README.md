@@ -2,6 +2,8 @@
 
 This Python tool accepts the .csv created by the Decredition wallet to calculate all profits from staking, and creates a copy of the .csv with the prices on the day that the tickets were staked, including the profit generated.
 
+This tool requires Decredition 1.2.0, which right now is in alpha testing. As of this writing, version 1.2.0 can be found in the [decred-binaries releases](https://github.com/decred/decred-binaries/releases/tag/v1.2.0-rc1).
+
 
 ## Usage
 
@@ -22,7 +24,7 @@ Feel free to add issues to the repository as necessary. If you want to get my at
 
 ## Decred Observer
 
-This project is provided by the same developer behind the [Decred Observer](https://dcr.observer), a Decred wallet explorer.
+This project is provided by the same developers behind the [Decred Observer](https://dcr.observer), a Decred wallet explorer.
 
 
 ## Donations
